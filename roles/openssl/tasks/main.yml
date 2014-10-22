@@ -1,0 +1,3 @@
+---
+- name: Update Openssl
+  yum:  name=openssl state=latest

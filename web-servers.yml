@@ -1,0 +1,11 @@
+---
+# Installs only OpenSSL
+
+#- hosts: [openstack_controller,openstack_neutron_gw,openstack_compute]
+- hosts: [web_hosts]
+  gather_facts: false
+  user: jbajin
+  sudo: yes
+  roles:
+   - openssl
+   - web
